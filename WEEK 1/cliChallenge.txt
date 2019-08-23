@@ -1,0 +1,51 @@
+﻿1. How do I create a hidden file or folder?
+
+If we want to create a plain text file in cli, first we have to go to our working folder.
+Then we have to write "mkdir nameOfFile" or "touch nameOfFile.txt" then hit enter.
+Now we have a txt file in our selected folder.
+
+But if we want to create a hidden file or folder, then we have to add a dot "."
+before our folder or file name.
+https://www.makeuseof.com/tag/hide-files-folders-linux/
+
+For example;
+$ mkdir .nameOfFile
+
+For listing our files or folders, we need to write "ls".
+But in this case we couldn't see secret files or folders.
+Because of this we have to add "-a"
+
+For example;
+$ ls -a
+
+Sometimes it’s easier to view the items in a folder in a list format, like the Details view in File Explorer in Windows. The following command lists all files, hidden and not hidden, in a detailed list format:
+
+$ ls -al
+
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+We can create multiple sub-directories by a single command from Linux like:
+
+mkdir -p /data/rs1 /data/rs2 /data/rs3
+
+https://superuser.com/questions/1002348/how-to-create-multiple-sub-directories-in-one-command-from-windows-command-promp
+
+In other example;
+$ mkdir -p  /c/Users/Desktop/FirstFolder/SecondFolder/ThirdFolder
+
+3.How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+As we learned in the lecture, if we want to write a message to a file,
+we use >
+For example;
+
+$ echo "first message" > "fileName.txt"
+
+In order to append a second message, we have to use ">>"
+For example;
+
+$ echo "second message" >> "fileName.txt"
+
+https://unix.stackexchange.com/questions/412835/append-text-with-echo-without-new-line
