@@ -87,7 +87,8 @@
      padding: 10px;
      margin: 10px;
      height: 750px;
-     overflow: hidden;
+     min-width: 190px;
+     overflow: auto;
      background: rgb(222, 255, 254);
    }
 
